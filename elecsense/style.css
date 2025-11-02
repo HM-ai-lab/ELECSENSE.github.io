@@ -1,0 +1,500 @@
+/* Basic Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    color: #004d40; /* Dark Teal/Green */
+}
+
+a {
+    text-decoration: none;
+    color: #00796b; /* Medium Teal/Green */
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #004d40;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    border: none;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #4caf50; /* Primary Green */
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #388e3c; /* Darker Green */
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: #1e88e5; /* Primary Blue */
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #1565c0;
+    transform: translateY(-2px);
+}
+
+.btn-tertiary {
+    background-color: #ffb300; /* Amber for Partnerships */
+    color: #333;
+}
+
+.btn-tertiary:hover {
+    background-color: #fb8c00;
+}
+
+.btn-nav {
+    padding: 8px 15px;
+    background-color: #00796b;
+    color: white;
+}
+
+.btn-nav:hover {
+    background-color: #004d40;
+    color: white;
+}
+
+/* Header & Navigation */
+header {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 1.8em;
+    color: #4caf50;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 25px;
+}
+
+header nav ul li a:not(.btn-nav) {
+    color: #333;
+    font-weight: 500;
+    padding: 5px 0;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #e0f2f1 0%, #ffffff 100%);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.8em;
+    margin-bottom: 15px;
+    color: #004d40;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Quick Form (FORM 1) Styling */
+.quick-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 30px auto 0;
+}
+
+.quick-form h3 {
+    margin-bottom: 20px;
+    color: #1e88e5;
+}
+
+.quick-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+.quick-form button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1em;
+}
+
+/* Problem/Solution Section */
+.problem-solution {
+    padding: 60px 0;
+    background-color: #e8f5e9; /* Light Green Background */
+}
+
+.problem-solution .container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    flex: 1;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.solution-card {
+    border-top: 5px solid #4caf50;
+}
+
+/* How It Works Section */
+.steps-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.steps-section h2 {
+    margin-bottom: 50px;
+    font-size: 2.2em;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.step-card {
+    padding: 25px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: white;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.step-number {
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #00796b;
+    color: white;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+/* Case Study Section */
+.case-study {
+    padding: 80px 0;
+    background-color: #f1f8e9;
+    text-align: center;
+}
+
+.case-study h2 {
+    margin-bottom: 40px;
+}
+
+.case-study-content {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    text-align: left;
+}
+
+.savings-summary, .breakdown {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    flex: 1;
+}
+
+.savings-summary h3, .breakdown h4 {
+    color: #4caf50;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.savings-summary ul {
+    list-style: none;
+    padding: 0;
+}
+
+.savings-summary li {
+    padding: 10px 0;
+    font-size: 1.1em;
+    border-bottom: 1px dashed #eee;
+}
+
+.net-result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e8f5e9;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.breakdown p {
+    padding: 8px 0;
+    border-bottom: 1px dotted #ccc;
+}
+
+.breakdown .note {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 15px;
+    border: none;
+}
+
+/* Services & Full Audit Form (FORM 2) */
+.services {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 40px;
+}
+
+.audit-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+    border: 1px solid #1e88e5;
+}
+
+.audit-form h3 {
+    color: #1e88e5;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.audit-form .form-group {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.audit-form input, .audit-form select, .audit-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+.audit-form textarea {
+    resize: vertical;
+    min-height: 100px;
+    margin-bottom: 20px;
+}
+
+.audit-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+.audit-form select {
+    margin-bottom: 20px;
+}
+
+.audit-form button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1em;
+}
+
+/* Footer */
+footer {
+    background-color: #34495e; /* Dark, Professional Footer */
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr; /* Info, Links, Partner Form */
+    gap: 40px;
+}
+
+footer h3, footer h4 {
+    color: #4caf50;
+    margin-bottom: 15px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links a {
+    color: #a5d6a7;
+    padding: 5px 0;
+    display: block;
+}
+
+/* Partner Form (FORM 3) */
+.partner-form-container {
+    padding: 20px;
+    background-color: #455a64; /* Slightly lighter dark background */
+    border-radius: 8px;
+}
+
+.partner-form-container p {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    color: #ddd;
+}
+
+.partner-form input, .partner-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #607d8b;
+    border-radius: 4px;
+    background-color: #546e7a;
+    color: white;
+}
+
+.partner-form select option {
+    background-color: #455a64;
+    color: white;
+}
+
+.partner-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* Form Message Styling */
+.form-message {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+    color: #388e3c;
+    background-color: #e8f5e9;
+    visibility: hidden; /* Hide by default */
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.form-message.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 992px) {
+    .steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .case-study-content {
+        flex-direction: column;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .footer-info, .footer-links, .partner-form-container {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 80px 0 50px;
+    }
+    .hero h2 {
+        font-size: 2em;
+    }
+    header .container {
+        flex-direction: column;
+    }
+    header nav ul {
+        padding: 10px 0 0;
+    }
+    header nav ul li {
+        margin: 0 10px;
+    }
+    .problem-solution .container {
+        flex-direction: column;
+    }
+    .steps-grid {
+        grid-template-columns: 1fr;
+    }
+    .audit-form .form-group {
+        flex-direction: column;
+        gap: 0;
+    }
+}

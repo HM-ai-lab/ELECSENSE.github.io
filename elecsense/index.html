@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elecsense | AI-Powered Energy Savings & 0% Financing</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-own-kit-id.js" crossorigin="anonymous" defer></script>
+    </head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <header>
+        <div class="container">
+            <h1 class="logo">Elecsense</h1>
+            <nav>
+                <ul>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#case-study">Case Study</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact" class="btn btn-nav">Start Saving</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Stop Wasting Money. Start Saving **Effortlessly**.</h2>
+                <p>We use **AI** to diagnose your energy vampires and provide **0% financing** for high-efficiency replacements, paid for by your savings.</p>
+
+                <form id="quickEstimateForm" class="quick-form">
+                    <h3>Get a Quick Savings Estimate</h3>
+                    <input type="email" name="email" placeholder="Your Email Address" required>
+                    <input type="tel" name="phone" placeholder="Your Phone Number" required>
+                    <button type="submit" class="btn btn-primary">Calculate My Potential Savings</button>
+                    <p id="estimateMessage" class="form-message"></p>
+                </form>
+
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="problem-solution">
+        <div class="container">
+            <div class="card">
+                <h3>The Problem 😠</h3>
+                <p>Your old appliances waste **30-50%** of your energy, but the cost to replace them (₹20K-₹50K) feels impossible. You know your bill is high, but **you don't know why**.</p>
+            </div>
+            <div class="card solution-card">
+                <h3>The Elecsense Solution ✨</h3>
+                <p>**AI Diagnosis** reveals the exact appliance culprits, and our **0% Financing** means *your savings* cover the cost of a new, efficient replacement. **No Upfront Cost.**</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="steps-section">
+        <div class="container">
+            <h2>Our 4-Step Path to Energy Freedom</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <span class="step-number">1</span>
+                    <h3>DIAGNOSIS (Week 1)</h3>
+                    <p>We install smart sensors and our AI analyzes your consumption to identify hidden **"energy vampires."**</p>
+                </div>
+                <div class="step-card">
+                    <span class="step-number">2</span>
+                    <h3>PRESCRIPTION (Week 2)</h3>
+                    <p>A detailed report shows you the **exact wasted money** from each old appliance, like a bad 2010 refrigerator.</p>
+                </div>
+                <div class="step-card">
+                    <span class="step-number">3</span>
+                    <h3>FINANCING (Same Day)</h3>
+                    <p>Get **0% interest EMI** for the replacement appliance, repaid *only* from the verifiable energy savings you achieve.</p>
+                </div>
+                <div class="step-card">
+                    <span class="step-number">4</span>
+                    <h3>TRACKING (Ongoing)</h3>
+                    <p>We verify your actual savings post-replacement and track results to build lasting trust and guarantee your savings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="case-study" class="case-study">
+        <div class="container">
+            <h2>Real Results: Rajesh's Home (Mumbai) 🏡</h2>
+            <div class="case-study-content">
+                <div class="savings-summary">
+                    <h3>Audit Summary:</h3>
+                    <ul>
+                        <li><i class="fas fa-bolt"></i> Total Monthly Savings: **₹2,240**</li>
+                        <li><i class="fas fa-wallet"></i> Total Investment: **₹88,000**</li>
+                        <li><i class="fas fa-hand-holding-usd"></i> 3-Year EMI: **₹2,444** (0% Interest)</li>
+                    </ul>
+                    <div class="net-result">
+                        <p><strong>NET POSITION YEAR 4+ (Pure Savings):</strong> **+₹2,240 / month**</p>
+                        <p><strong>25-Year Net Benefit:</strong> **₹5.9 LAKH!**</p>
+                    </div>
+                </div>
+                <div class="breakdown">
+                    <h4>Appliance Breakdown:</h4>
+                    <p><strong>Refrigerator (2008):</strong> Savings of **₹770/month**</p>
+                    <p><strong>AC (2012, 3-star):</strong> Savings of **₹980/month**</p>
+                    <p><strong>Water Heater (Non-Solar):</strong> Savings of **₹490/month**</p>
+                    <p class="note">*The small initial EMI deficit (-₹204/month) is covered by the massive savings starting Year 4.*</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Ready for Your Full Audit?</h2>
+
+            <form id="fullAuditForm" class="audit-form">
+                <h3>Request Your Comprehensive Energy Prescription</h3>
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="auditEmail" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="auditPhone" placeholder="Phone Number" required>
+                    <input type="text" name="city" placeholder="City (e.g., Mumbai, Delhi)" required>
+                </div>
+                <label for="bill-size">Approximate Monthly Electricity Bill (₹)</label>
+                <select name="bill-size" id="bill-size" required>
+                    <option value="">Select Range</option>
+                    <option value="500-2000">₹500 - ₹2,000</option>
+                    <option value="2000-5000">₹2,000 - ₹5,000</option>
+                    <option value="5000+">₹5,000+</option>
+                </select>
+                <textarea name="appliances" placeholder="List your major appliances (Fridge, AC, Water Heater, etc.)"></textarea>
+                <button type="submit" class="btn btn-secondary">Schedule My Full AI Audit</button>
+                <p id="auditMessage" class="form-message"></p>
+            </form>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>Elecsense</h3>
+                    <p>AI-Powered Savings. Sustainable Future.</p>
+                    <p>&copy; 2025 Elecsense. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#case-study">Real Results</a></li>
+                        <li><a href="#services">Schedule Audit</a></li>
+                    </ul>
+                </div>
+                <div class="partner-form-container">
+                    <h4>Partner with Elecsense</h4>
+                    <form id="partnerForm" class="partner-form">
+                        <p>Manufacturers, Banks, & Utilities.</p>
+                        <input type="
